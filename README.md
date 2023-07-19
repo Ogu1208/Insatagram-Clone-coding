@@ -1,7 +1,8 @@
 # Insatagram-Clone-coding
 
-## 프로젝트 주제
+[Notion](https://ogu1208.notion.site/Instagram-27bdd013c4c64df2b5c0cd784192bce3?pvs=4)
 
+## 프로젝트 주제
 
 - 인스타그램 클론 코딩
 
@@ -28,7 +29,8 @@
 - 
 ## ERD 설계
 
-![image](https://github.com/Ogu1208/Insatagram-Clone-coding/assets/76902448/4ecf6a54-3700-4ae0-8b62-b2f2bd16c968)
+![image](https://github.com/Ogu1208/Insatagram-Clone-coding/assets/76902448/53bc0650-cfe8-4d40-ae7d-87a80592590d)
+
 
 - **Users : Post = 1 : N**
     
