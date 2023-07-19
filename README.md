@@ -11,18 +11,24 @@
 - 스프링 프로젝트 설계, 개발, 배포 공부를 목표로 한다.
 - 문제 → 요구사항 → 기능(feature) 도출 → 구현 방안의 기획 → 개발 계획 수립 → 실행
 
-- 
-- GitHub : 테스트/빌드 Auto화
+## 사용 기술 스택
+
+- 언어 : Java 11
+- 프레임워크 : SpringBoot 3.1.1
+- 빌드 도구 : gradle
+- 테스트 : JUnit5
+    - 라이브러리 : Mockito, AssertJ
+    - 스프링 부트 슬라이스 테스트 테크닉
+    - GitHub : 테스트/빌드 Auto화
 - DB Driver : MySQL 8.0.31
     - 테스트 Driver : H2
 - DB 기술 : JPA
 - 배포 : Heroku
 
+- 
 ## ERD 설계
 
 ![image](https://github.com/Ogu1208/Insatagram-Clone-coding/assets/76902448/4ecf6a54-3700-4ae0-8b62-b2f2bd16c968)
-
-
 
 - **Users : Post = 1 : N**
     
