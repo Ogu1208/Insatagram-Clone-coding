@@ -14,7 +14,7 @@
 
 ## 사용 기술 스택
 
-- 언어 : Java 11
+- 언어 : Java 17
 - 프레임워크 : SpringBoot 3.1.1
 - 빌드 도구 : gradle
 - 테스트 : JUnit5
