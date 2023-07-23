@@ -1,4 +1,4 @@
-package com.ogu.instagram.user.domain;
+package com.ogu.instagram.common.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.ToString;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -32,8 +31,4 @@ public abstract class AuditingFields {
     @LastModifiedDate
     @Column(nullable = false)
     private LocalDateTime modifiedAt; // 수정일시
-
-    @LastModifiedBy
-    @Column(nullable = false, length = 20)
-    private String modifiedBy; // 수정자
 }
