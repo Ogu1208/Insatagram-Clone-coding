@@ -24,8 +24,8 @@ public class User extends AuditingFields{
     @Column(name = "id", updatable = false)
     private long id;  // DB 테이블의 'id' 컬럼과 매칭
 
-    @Column(name = "username", nullable = false)  // not null
-    private String username;
+    @Column(name = "user_id", nullable = false)  // not null
+    private String userId;
 
     @Column(name = "nickname", nullable = false, length = 20)  // not null
     private String nickname;
@@ -36,19 +36,22 @@ public class User extends AuditingFields{
     @Column(name = "password", nullable = false)  // not null
     private String password;
 
-    @Column(nullable = false)
+    @Column(name = "profile_img_url")
+    private String profileImgUrl;
+
+    @Column(name = "introduce")
     private String introduce;
 
     @Builder
-    public User(String username, String nickname, String email, String password, String introduce) {
-        this.username = username;
+    public User(String userId, String nickname, String email, String password) {
+        this.userId = userId;
         this.nickname = nickname;
         this.email = email;
         this.password = password;
-        this.introduce = introduce;
+        this.profileImgUrl = "https://drive.google.com/file/d/1vz68N5HlTxo9rPZ7TK0x2INBo7Q1k-al/view?usp=drive_link";  // 초기화
     }
 
-    public void updateUsername(String uswername) { this.username = uswername; }
+    public void updateUsername(String uswername) { this.userId = uswername; }
 
     public void updateNickname(String uswername) { this.nickname = uswername; }
 
