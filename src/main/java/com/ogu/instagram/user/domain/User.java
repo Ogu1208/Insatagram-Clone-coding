@@ -1,5 +1,6 @@
 package com.ogu.instagram.user.domain;
 
+import com.ogu.instagram.common.domain.AuditingFields;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -13,11 +14,11 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Table(name = "users",
         indexes = {
         @Index(columnList = "email", unique = true),
-        @Index(columnList = "username", unique = true),
+        @Index(columnList = "user_id", unique = true),
         @Index(columnList = "createdAt"),
         @Index(columnList = "modifiedAt")
 })
-public class User extends AuditingFields{
+public class User extends AuditingFields {
 
     @Id  // id 필드를 기본키로 지정
     @GeneratedValue(strategy = GenerationType.IDENTITY)  // 기본 키가 자동으로 1씩 증가
@@ -51,7 +52,7 @@ public class User extends AuditingFields{
         this.profileImgUrl = "https://drive.google.com/file/d/1vz68N5HlTxo9rPZ7TK0x2INBo7Q1k-al/view?usp=drive_link";  // 초기화
     }
 
-    public void updateUsername(String uswername) { this.userId = uswername; }
+    public void updateUserId(String userId) { this.userId = userId; }
 
     public void updateNickname(String uswername) { this.nickname = uswername; }
 
