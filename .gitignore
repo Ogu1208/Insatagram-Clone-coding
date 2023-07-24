@@ -27,7 +27,7 @@ application.yml
 *.ipr
 out/
 !**/src/main/**/out/
-!**/src/main/resources/*.yml
+src/main/resources/application.yml
 
 ### NetBeans ###
 /nbproject/private/
